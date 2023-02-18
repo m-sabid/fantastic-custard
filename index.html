@@ -30,11 +30,153 @@
             </div>
         </nav>
 
+
+        <div class="row my-5">
+            <div class="col-md-8 rounded">
+                <div class="row">
+
+                    <div class="card-deck mb-3 col-md-4">
+                        <div class="card text-center">
+                            <img src="./resources/images/triangle.png" class="card-img-top p-3 h-100" alt="image">
+                            <div data-id="1" class="card-body">
+                                <h5 class="card-title" id="card_title">Triangle</h5>
+                                <small class="d-flex my-3 d-flex align-items-center justify-content-center">Area (A) =
+                                    0.5 X b X h</small>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <input id="inputB" type="number" placeholder="b" class="w-100">
+                                    <label>cm</label>
+                                    <input id="inputH" type="number" placeholder="h" class="w-100">
+                                    <label>cm</label>
+                                </div>
+                                <button onclick="getTags(this)" class="btn btn-primary mt-3 text-white w-100"
+                                    style="cursor: pointer;">
+                                    Calculate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-deck mb-3 col-md-4">
+                        <div class="card text-center">
+                            <img src="./resources/images/rectangle.png" class="card-img-top p-3 h-100" alt="image">
+                            <div data-id="1" class="card-body">
+                                <h5 class="card-title" id="card_title">Rectangle</h5>
+                                <small class="d-flex my-3 d-flex align-items-center justify-content-center">Area (A) = w
+                                    X I</small>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <input id="inputB" type="number" placeholder="b" class="w-100">
+                                    <label>cm</label>
+                                    <input id="inputH" type="number" placeholder="h" class="w-100">
+                                    <label>cm</label>
+                                </div>
+                                <button onclick="getTags(this)" class="btn btn-primary mt-3 text-white w-100"
+                                    style="cursor: pointer;">
+                                    Calculate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-deck mb-3 col-md-4">
+                        <div class="card text-center">
+                            <img src="./resources/images/parallelogram.png" class="card-img-top p-3 h-100" alt="image">
+                            <div data-id="1" class="card-body">
+                                <h5 class="card-title" id="card_title">Parallelogram</h5>
+                                <small class="d-flex my-3 d-flex align-items-center justify-content-center">Area (A) = b
+                                    X h</small>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <input id="inputB" type="number" placeholder="b" class="w-100">
+                                    <label>cm</label>
+                                    <input id="inputH" type="number" placeholder="h" class="w-100">
+                                    <label>cm</label>
+                                </div>
+                                <button onclick="getTags(this)" class="btn btn-primary mt-3 text-white w-100"
+                                    style="cursor: pointer;">
+                                    Calculate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-deck mb-3 col-md-4">
+                        <div class="card text-center">
+                            <img src="./resources/images/rhombus.png" class="card-img-top p-3 h-100" alt="image">
+                            <div data-id="1" class="card-body">
+                                <h5 class="card-title" id="card_title">Rhombus</h5>
+                                <small class="d-flex my-3 d-flex align-items-center justify-content-center">Area (A) =
+                                    0.5 X d<sub>1</sub> X d<sub>2</sub></small>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <input id="inputB" type="number" placeholder="b" class="w-100">
+                                    <label>cm</label>
+                                    <input id="inputH" type="number" placeholder="h" class="w-100">
+                                    <label>cm</label>
+                                </div>
+                                <button onclick="getTags(this)" class="btn btn-primary mt-3 text-white w-100"
+                                    style="cursor: pointer;">
+                                    Calculate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-deck mb-3 col-md-4">
+                        <div class="card text-center">
+                            <img src="./resources/images/pentagon.png" class="card-img-top p-3 h-100" alt="image">
+                            <div data-id="1" class="card-body">
+                                <h5 class="card-title" id="card_title">Pentagon</h5>
+                                <small class="d-flex my-3 d-flex align-items-center justify-content-center">Area (A) =
+                                    0.5 X p X b</small>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <input id="inputB" type="number" placeholder="b" class="w-100">
+                                    <label>cm</label>
+                                    <input id="inputH" type="number" placeholder="h" class="w-100">
+                                    <label>cm</label>
+                                </div>
+                                <button onclick="getTags(this)" class="btn btn-primary mt-3 text-white w-100"
+                                    style="cursor: pointer;">
+                                    Calculate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-deck mb-3 col-md-4">
+                        <div class="card text-center">
+                            <img src="./resources/images/ellipse.png" class="card-img-top p-3 h-100" alt="image">
+                            <div data-id="1" class="card-body">
+                                <h5 class="card-title" id="card_title">Ellipse</h5>
+                                <small class="d-flex my-3 d-flex align-items-center justify-content-center">Area (A) =
+                                    πab</small>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <input id="inputB" type="number" placeholder="b" class="w-100">
+                                    <label>cm</label>
+                                    <input id="inputH" type="number" placeholder="h" class="w-100">
+                                    <label>cm</label>
+                                </div>
+                                <button onclick="getTags(this)" class="btn btn-primary mt-3 text-white w-100"
+                                    style="cursor: pointer;">
+                                    Calculate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- list section -->
+            <div class="col-md-4 border rounded p-">
+                <h5>Area Calculation</h5>
+                <ol id="cart-items"></ol>
+
+            </div>
+        </div>
+
     </section>
     <!-- Bootstrap JavaScript Link -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
