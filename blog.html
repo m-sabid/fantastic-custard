@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Blog</title>
 </head>
-
+ 
 <body>
-
+ 
     <section class="main-section container">
-
-
+ 
+ 
         <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
             <a class="navbar-brand" href="/">Interactive <br> <small>Geometry Genius</small> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -29,15 +29,71 @@
                 </ul>
             </div>
         </nav>
-        <h1>
-            Welcome to Blog Page
-        </h1>
-
+ 
+        <h1 class="text-primary">What is the DOM?</h1>
+        <p>The Document Object Model (DOM) is a programming interface for web documents. It provides a way for programs
+            to interact with the content, structure, and style of an HTML or XML document.</p>
+        <h2>What is the purpose of the DOM?</h2>
+        <p>The purpose of the DOM is to provide a standardized way for programs to access and manipulate the content of
+            web pages. This allows web developers to write code that can dynamically update the content of a web page
+            based on user interactions or other events, without having to reload the entire page.</p>
+        <h2>Common use cases for the DOM</h2>
+        <ul>
+            <li>Adding, removing, or modifying HTML elements on a web page</li>
+            <li>Modifying the styles or layout of HTML elements</li>
+            <li>Responding to user input, such as clicks or keyboard events</li>
+            <li>Dynamically fetching or updating content from a server without reloading the entire page</li>
+        </ul>
+        <h1  class="text-primary">How will you select HTML elements using DOM?</h1>
+        <p>One of the key features of the DOM is its ability to select and manipulate HTML elements on a web page. There
+            are several methods available for selecting elements, each with its own strengths and weaknesses.</p>
+        <h2>DOM methods for selecting elements</h2>
+        <ul>
+            <li><strong>getElementById:</strong> Returns the element with the specified ID attribute.</li>
+            <li><strong>getElementsByClassName:</strong> Returns a collection of elements with the specified class name.
+            </li>
+            <li><strong>getElementsByTagName:</strong> Returns a collection of elements with the specified tag name.
+            </li>
+            <li><strong>querySelector:</strong> Returns the first element that matches the specified CSS selector.</li>
+            <li><strong>querySelectorAll:</strong> Returns a list of all elements that match the specified CSS selector.
+            </li>
+        </ul>
+        <p>These methods can be called on the document object, which represents the entire HTML document, or on
+            individual HTML elements themselves. Once an element has been selected, it can be manipulated using various
+            DOM methods, such as:</p>
+        <ul>
+            <li><strong>innerHTML:</strong> Gets or sets the HTML content of an element.</li>
+            <li><strong>setAttribute:</strong> Sets the value of the specified attribute on an element.</li>
+            <li><strong>appendChild:</strong> Adds a new child node to an element.</li>
+            <li><strong>removeChild:</strong> Removes a child node from an element.</li>
+            <li><strong>addEventListener:</strong> Attaches an event listener to an element.</li>
+        </ul>
+        <h1 class="text-primary">What is event bubbling?</h1>
+        <p>Event bubbling is a feature of the DOM that allows events to "bubble up" from child elements to their parent
+            elements, and potentially even to higher-level ancestors in the document hierarchy.</p>
+        <h2>How does event bubbling work?</h2>
+        <p>When an event is triggered on an element, such as a click or a keypress, the event will be handled by that
+            element first. If the event has not been fully handled by the element, it will then "bubble up" to the
+            element's parent, and so on up the document hierarchy until it reaches the top-level document object. Along
+            the way, each element in the hierarchy can handle the event or choose to pass it along to the next level.
+        </p>
+        <h2>Why is event bubbling important?</h2>
+        <p>Event bubbling is important because it allows for more flexible event handling on a web page. Instead of
+            having to attach an event listener to every individual element on a page, you can attach a single event
+            listener to a parent element and handle events as they bubble up. This can be particularly useful for
+            dynamic web pages where elements may be added or removed dynamically, since you don't need to update event
+            listeners for each individual element.</p>
+        <h1  class="text-primary">What is a callback function and why will you use it?</h1>
+        <p>A callback function is a function that is passed as an argument to another function and is executed by that
+            function at a later time. The purpose of a callback function is to allow the calling function to continue
+            executing while the callback function performs some asynchronous or time-consuming operation, and then
+            receive a notification when the operation is complete.</p>
+ 
     </section>
     <!-- Bootstrap JavaScript Link -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
-
+ 
 </html>
