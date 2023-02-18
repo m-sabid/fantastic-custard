@@ -48,8 +48,8 @@
                                     <input id="inputH" type="number" placeholder="h" class="w-100">
                                     <label>cm</label>
                                 </div>
-                                <button onclick="geometryCalculation(this)" class="btn btn-primary mt-3 text-white w-100"
-                                    style="cursor: pointer;">
+                                <button onclick="geometryCalculation(this)"
+                                    class="btn btn-primary mt-3 text-white w-100" style="cursor: pointer;">
                                     Calculate
                                 </button>
                             </div>
@@ -69,8 +69,8 @@
                                     <input id="inputH" type="number" placeholder="h" class="w-100">
                                     <label>cm</label>
                                 </div>
-                                <button onclick="geometryCalculation(this)" class="btn btn-primary mt-3 text-white w-100"
-                                    style="cursor: pointer;">
+                                <button onclick="geometryCalculation(this)"
+                                    class="btn btn-primary mt-3 text-white w-100" style="cursor: pointer;">
                                     Calculate
                                 </button>
                             </div>
@@ -90,8 +90,8 @@
                                     <input id="inputH" type="number" placeholder="h" class="w-100">
                                     <label>cm</label>
                                 </div>
-                                <button onclick="geometryCalculation(this)" class="btn btn-primary mt-3 text-white w-100"
-                                    style="cursor: pointer;">
+                                <button onclick="geometryCalculation(this)"
+                                    class="btn btn-primary mt-3 text-white w-100" style="cursor: pointer;">
                                     Calculate
                                 </button>
                             </div>
@@ -111,8 +111,8 @@
                                     <input id="inputH" type="number" placeholder="h" class="w-100">
                                     <label>cm</label>
                                 </div>
-                                <button onclick="geometryCalculation(this)" class="btn btn-primary mt-3 text-white w-100"
-                                    style="cursor: pointer;">
+                                <button onclick="geometryCalculation(this)"
+                                    class="btn btn-primary mt-3 text-white w-100" style="cursor: pointer;">
                                     Calculate
                                 </button>
                             </div>
@@ -132,8 +132,8 @@
                                     <input id="inputH" type="number" placeholder="h" class="w-100">
                                     <label>cm</label>
                                 </div>
-                                <button onclick="geometryCalculation(this)" class="btn btn-primary mt-3 text-white w-100"
-                                    style="cursor: pointer;">
+                                <button onclick="geometryCalculation(this)"
+                                    class="btn btn-primary mt-3 text-white w-100" style="cursor: pointer;">
                                     Calculate
                                 </button>
                             </div>
@@ -153,8 +153,8 @@
                                     <input id="inputH" type="number" placeholder="h" class="w-100">
                                     <label>cm</label>
                                 </div>
-                                <button onclick="geometryCalculation(this)" class="btn btn-primary mt-3 text-white w-100"
-                                    style="cursor: pointer;">
+                                <button onclick="geometryCalculation(this)"
+                                    class="btn btn-primary mt-3 text-white w-100" style="cursor: pointer;">
                                     Calculate
                                 </button>
                             </div>
@@ -181,23 +181,25 @@
     <script>
 
         function geometryCalculation(input) {
-            // Get the parent element (i.e., the card)
+            // Get element
             const card = input.parentNode;
 
-            // Find all elements within the card
+            // Find all elements in the card
             const tags = card.querySelector('#card_title');
 
-            // calculate data
+            // Find inputs
             const inputB = card.querySelector('#inputB');
             const inputH = card.querySelector('#inputH');
+            // Convert input to number
             const numInputB = parseFloat(inputB.value);
             const numInputH = parseFloat(inputH.value);
-
+            // Create Elements
             const items = document.getElementById('cart-items');
             const item = document.createElement('li');
             const sup = document.createElement('sup');
             const btn = document.createElement('button');
 
+            // Conditions for geometrical calculations
             let calculatedValue;
 
             if (tags.innerHTML === "Triangle") {
@@ -219,8 +221,10 @@
                 calculatedValue = 3.1416 * numInputB * numInputH;
             }
 
+            // Cm to m
             const m = calculatedValue / 100;
 
+            // Validation
             if (isNaN(calculatedValue)) {
                 alert('Please enter a number!');
             } else {
